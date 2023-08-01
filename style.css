@@ -1,0 +1,147 @@
+@import url(normalize.css);
+ * {
+     font-family: "Gloria Hallelujah", cursive;
+     letter-spacing: 1px;
+ }
+ 
+ body {
+     background-image: linear-gradient(to right, #8360c3, #2ebf91);
+     max-height: 100vh;
+ }
+ 
+ input[type="text"] {
+     border: none;
+     outline: none;
+     padding-left: 0.5rem;
+     border-radius: 4px;
+ }
+ 
+ p {
+     margin: 0;
+     color: blue;
+     font-weight: bold;
+ }
+ 
+ p i {
+     color: #00b600;
+     margin-right: 0.25rem;
+     font-size: 1.25rem;
+ }
+ 
+ p>span {
+     color: black;
+     font-weight: bold;
+     margin-left: 0.25rem;
+ }
+ 
+ h1 {
+     font-size: 1.75rem;
+ }
+ 
+ @media (max-width: 576px) {
+     h1 {
+         font-size: 1.25rem;
+     }
+ }
+ 
+ button {
+     border: none;
+     color: #fff;
+     padding: 0.75rem;
+     border-radius: 4px;
+     font-size: 12px;
+     cursor: pointer;
+     font-weight: bold;
+     transition: 0.2s ease;
+ }
+ 
+ button.danger {
+     background-color: #ff3030;
+ }
+ 
+ button.primary {
+     background-color: #3838f6;
+ }
+ 
+ button.success {
+     background-color: #019401;
+ }
+ 
+ button.warning {
+     background-color: #ff7700;
+ }
+ 
+ button:hover {
+     opacity: 0.8;
+ }
+ 
+ @media (max-width: 576px) {
+     button {
+         padding: 0.5rem;
+     }
+ }
+ 
+ .container {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     background-color: #ead41c;
+     width: 500px;
+     min-height: 500px;
+     margin: 4rem auto;
+     border-radius: 30px;
+ }
+ 
+ @media (max-width: 576px) {
+     .container {
+         width: 350px;
+     }
+ }
+ 
+ .container form {
+     width: 400px;
+     display: flex;
+     margin-bottom: 1rem;
+ }
+ 
+ @media (max-width: 576px) {
+     .container form {
+         width: 300px;
+     }
+ }
+ 
+ .container form input {
+     flex: 1;
+     margin-right: 0.5rem;
+ }
+ 
+ .container .user {
+     width: 400px;
+     margin-bottom: 1rem;
+ }
+ 
+ @media (max-width: 576px) {
+     .container .user {
+         width: 300px;
+     }
+ }
+ 
+ .container .user .user-item {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 70px;
+ }
+ 
+ @media (max-width: 576px) {
+     .container .user .user-item .buttons {
+         display: flex;
+         flex-direction: column;
+         gap: 0.25rem;
+     }
+ }
+ 
+ .container .user input {
+     margin-top: 0.5rem;
+     height: 30px;
+ }
